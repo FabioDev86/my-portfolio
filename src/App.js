@@ -5,6 +5,7 @@ import Projects from './components/Projects';
 import Tools from './components/Tools';
 import Blog from './components/Blog';
 import Contact from './components/Contact';
+import { LanguageProvider } from './contexts/LanguageProvider';
 
 function App() {
   return (
@@ -18,5 +19,12 @@ function App() {
     </div>
   );
 }
+function Root(){
+  return(
+    <LanguageProvider>
+      <App />
+    </LanguageProvider>
+  );
+}
 
-export default App;
+export default Root;
