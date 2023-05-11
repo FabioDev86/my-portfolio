@@ -12,10 +12,12 @@ export default function Nav(){
     return(
         <nav>
             <DropMenu />
-            <h1>{links[0]}</h1>
-            <h1>{links[1]}</h1>
-            <h1>{links[2]}</h1>
-            <h1>{links[3]}</h1>
+            <div className="links">
+                <h1>{links[0]}</h1>
+                <h1>{links[1]}</h1>
+                <h1>{links[2]}</h1>
+                <h1>{links[3]}</h1>
+            </div>
         </nav>
     );
 }

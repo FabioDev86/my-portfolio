@@ -9,7 +9,7 @@ export default function DropMenu(){
         case "deutsch" : label = "Wählen Sie eine Sprache"; break;
     }
     return(
-        <>
+        <div>
             <label for="language-menu">{label}</label>
             <select id="language-menu" 
                 value={language}
@@ -18,7 +18,7 @@ export default function DropMenu(){
                 <option value="italiano">Italiano</option>
                 <option value="deutsch">Deutsch</option>
             </select>
-        </>
+        </div>
          
     );
 }
