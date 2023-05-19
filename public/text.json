@@ -1,0 +1,77 @@
+{
+    "nav_text" : {
+        "dropbox" : {
+            "english" : "Select a language",
+            "italiano" : "Seleziona una lingua",
+            "deutsch" : "Wählen Sie eine Sprache"
+        },
+        "links" : {
+            "english" : ["Home","Projects","Blog","Contacts"],
+            "italiano" : ["Pagina Iniziale","Progetti","Blog","Contatti"],
+            "deutsch" : ["Startseite","Projekte","Bloggen","Kontakte"]
+        }
+    },
+
+    "header_text" : {
+        "presentation" : {
+            "english" : "Hi, I'm Fabio Bauleo, a front end developer specialized in React",
+            "italiano" : "Ciao, sono Fabio Bauleo, uno sviluppatore front end specializzato in React",
+            "deutsch" : "Hallo, ich bin Fabio Bauleo, ein Frontend-Entwickler mit Spezialisierung auf React"
+        },
+        "motto" : {
+            "english" : "\"Maybe I don't know how to do it yet, but I will figure it out\"",
+            "italiano" : "\"Forse non so ancora come farlo, ma troverò un modo\"",
+            "deutsch" : "\"Vielleicht weiß ich noch nicht, wie ich es machen soll, aber ich werde es herausfinden\""
+        },
+        "profile_alt" : {
+            "english" : "Profile image",
+            "italiano" : "Immagine di profilo",
+            "deutsch" : "Profilbild"
+        }        
+    },
+
+    "project_text" : {
+        "title" : {
+            "english" : "My Projects",
+            "italiano" : "I miei progetti",
+            "deutsch" : "Meine Projekte"
+        },
+        "sub_title" : {
+            "english" : "Here are some examples of what I can do for you",
+            "italiano" : "Ecco alcuni esempi di quello che posso fare per te",
+            "deutsch" : "Hier sind einige Beispiele dafür, was ich für Sie tun kann"
+        }
+    },
+
+    "tools_text" : {
+        "english" : "My favourite tools",
+        "italiano" : "I miei tools preferiti",
+        "deutsch" : "Meine Lieblings Tools"
+    },
+
+    "post_text" : {
+        "english" : "My latest blog post",
+        "italiano" : "I miei ultimi blog post",
+        "deutsch" : "Meine neuesten Blogbeiträge"
+    },
+    
+    "contacts_text" : {
+        "name_label" : {
+            "english" : "Your name",
+            "italiano" : "Il tuo nome",
+            "deutsch" : "Ihre Name"
+        },
+        "email_label" : {
+            "english" : "Your e-mail",
+            "italiano" : "La tua e-mail",
+            "deutsch" : "Ihre e-mail"
+        },
+        "message_label" : {
+            "english" : "Your message",
+            "italiano" : "Il tuo messaggio",
+            "deutsch" : "Ihre Nachricht"
+        }
+    }
+
+
+}
