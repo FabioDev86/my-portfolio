@@ -1,12 +1,13 @@
 import { useLanguage } from "../contexts/LanguageProvider";
+import text from "../text.json";
 
 export default function DropMenu(){
     const { language, changeLanguage } = useLanguage();
     let label;
     switch(language){
-        case "english" : label = "Choose a language"; break;
-        case "italiano" : label = "Scegli una lingua"; break;
-        case "deutsch" : label = "Wählen Sie eine Sprache"; break;
+        case "english" : label = text.nav_text.dropbox.english; break;
+        case "italiano" : label = text.nav_text.dropbox.italiano; break;
+        case "deutsch" : label = text.nav_text.dropbox.deutsch; break;
     }
     return(
         <div>

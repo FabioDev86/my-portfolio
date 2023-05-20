@@ -1,13 +1,14 @@
 import { useLanguage } from "../contexts/LanguageProvider";
 import DropMenu from "./DropMenu";
+import text from "../text.json";
 
 export default function Nav(){
     const { language } = useLanguage();
     let links = [];
     switch(language){
-        case "english" : links = ["Home","Projects","Blog","Contacts"]; break;
-        case "italiano" : links = ["Pagina Iniziale","Progetti","Blog","Contatti"]; break;
-        case "deutsch" : links = ["Startseite","Projekte","Bloggen","Kontakte"]; break;
+        case "english" : links = text.nav_text.links.english; break;
+        case "italiano" : links = text.nav_text.links.italiano; break;
+        case "deutsch" : links = text.nav_text.links.deutsch; break;
     }
     return(
         <nav>

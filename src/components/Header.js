@@ -1,11 +1,13 @@
 import { useLanguage } from "../contexts/LanguageProvider";
+import data from "../text.json";
+
 export default function Header(){
     const { language } = useLanguage();
     let text = [];
     switch(language){
-        case "english" : text = ["Hi, I'm Fabio Bauleo, a front end developer specialized in React", "\"Maybe I don't know how to do it yet, but I will figure it out\"", "Profile image" ]; break;
-        case "italiano" : text = ["Ciao, sono Fabio Bauleo, uno sviluppatore front end specializzato in React", "\"Forse non so ancora come farlo, ma troverò un modo\"", "Immagine di profilo"]; break;
-        case "deutsch" : text = ["Hallo, ich bin Fabio Bauleo, ein Frontend-Entwickler mit Spezialisierung auf React", "\"Vielleicht weiß ich noch nicht, wie ich es machen soll, aber ich werde es herausfinden\"", "Profilbild"]; break;
+        case "english" : text = [data.header_text.presentation.english, data.header_text.motto.english, data.header_text.profile_alt.english ]; break;
+        case "italiano" : text = [data.header_text.presentation.italiano, data.header_text.motto.italiano, data.header_text.profile_alt.italiano]; break;
+        case "deutsch" : text = [data.header_text.presentation.deutsch, data.header_text.motto.deutsch, data.header_text.profile_alt.deutsch]; break;
     }
     return(
         <header>
