@@ -36,10 +36,7 @@ img {
   padding-left: 5vw;
   padding-right: 5vw;
 }
-
-.tools span {
-  background-color: gray;
-  padding-top: 10px;
-  padding-bottom: 10px;
-  margin-right: 5vw;
+.tools img {
+  width: 50px;
 }
+

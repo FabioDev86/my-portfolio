@@ -12,7 +12,11 @@ export default function Tools(){
     return(
         <div className="tools">
             <h1>{ header }</h1>
-            <span>Tool1</span><span>Tool2</span><span>Tool3</span>
+            <img src="tools/visual-studio.svg" alt="Visual Studio Code"/>
+            <img src="tools/react.svg" alt="React"/>
+            <img src="tools/figma.svg" alt="Figma"/>
+            <img src="tools/github.svg" alt="GitHub"/>
+            <img src="tools/bootstrap.svg" alt="Bootstrap"/>            
         </div>
     );
 }
