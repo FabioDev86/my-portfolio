@@ -6,9 +6,9 @@
             "deutsch" : "Wählen Sie eine Sprache"
         },
         "links" : {
-            "english" : ["Home","Projects","Blog","Contacts"],
-            "italiano" : ["Pagina Iniziale","Progetti","Blog","Contatti"],
-            "deutsch" : ["Startseite","Projekte","Bloggen","Kontakte"]
+            "english" : ["Home","Projects","About","Contacts"],
+            "italiano" : ["Pagina Iniziale","Progetti","Chi sono","Contatti"],
+            "deutsch" : ["Startseite","Projekte","Wer bin Ich","Kontakte"]
         }
     },
 
@@ -49,13 +49,20 @@
         "deutsch" : "Meine Lieblings Tools"
     },
 
-    "post_text" : {
-        "english" : "My latest blog post",
-        "italiano" : "I miei ultimi blog post",
-        "deutsch" : "Meine neuesten Blogbeiträge"
+    "about_text" : {
+        "header" : {
+            "english" : "What about me?",
+            "italiano" : "A proposito di me!",
+            "deutsch" : "Und Ich?"
+        }
     },
     
     "contacts_text" : {
+        "header" : {
+            "english" : "Contact me",
+            "italiano" : "Contattami",
+            "deutsch" : "Kontaktiere mich"
+        },
         "name_label" : {
             "english" : "Your name",
             "italiano" : "Il tuo nome",
