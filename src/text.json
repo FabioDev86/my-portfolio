@@ -77,6 +77,26 @@
             "english" : "Your message",
             "italiano" : "Il tuo messaggio",
             "deutsch" : "Ihre Nachricht"
+        },
+        "required_name" : {
+            "english" : "Please enter your name",
+            "italiano" : "Per favore inserisci il tuo nome",
+            "deutsch" : "Bitte geben Sie Ihren Namen ein" 
+        },
+        "required_email" : {
+            "english" : "Please enter your email",
+            "italiano" : "Per favore inserisci la tua email",
+            "deutsch" : "Bitte geben Sie Ihre Email ein"
+        }, 
+        "required_message" : {
+            "english" : "Please write a message",
+            "italiano" : "Per favore scrivi un messaggio",
+            "deutsch" : "Bitte schreiben Sie eine Nachricht"
+        },
+        "invalid_email" : {
+            "english" : "It seems your email address is invalid",
+            "italiano" : "Sembra che il tuo indirizzo email non sia corretto",
+            "deutsch" : "Offenbar ist Ihre E-Mail-Adresse ungültig"
         }
     }
 
