@@ -2,6 +2,7 @@ import { useLanguage } from "../contexts/LanguageProvider";
 import DropMenu from "./DropMenu";
 import text from "../text.json";
 
+
 export default function Nav(){
     const { language } = useLanguage();
     let links = [];
@@ -14,10 +15,10 @@ export default function Nav(){
         <nav>
             <DropMenu />
             <div className="links">
-                <h1>{links[0]}</h1>
-                <h1>{links[1]}</h1>
-                <h1>{links[2]}</h1>
-                <h1>{links[3]}</h1>
+                <h3>{links[0]}</h3>
+                <h3>{links[1]}</h3>
+                <h3>{links[2]}</h3>
+                <h3>{links[3]}</h3>
             </div>
         </nav>
     );

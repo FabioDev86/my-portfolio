@@ -8,6 +8,7 @@ import Contact from './components/Contact';
 import { LanguageProvider } from './contexts/LanguageProvider';
 import Footer from './components/Footer';
 
+
 function App() {
   return (
     <div className="App">

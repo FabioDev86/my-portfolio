@@ -2,7 +2,6 @@
   text-align: center;
 }
 
-
 /*NAVBAR STYLING*/
 nav {
   display: flex;
@@ -11,6 +10,10 @@ nav {
   padding-left: 5vw;
   padding-right: 5vw;
   align-items: center;
+  position: sticky;
+  top: 0;
+  border-bottom: solid black;
+  z-index: 1000;
 }
 .links {
   display: flex;
