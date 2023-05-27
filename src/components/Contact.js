@@ -1,8 +1,8 @@
 import { useLanguage } from "../contexts/LanguageProvider";
 import data from "../text.json";
-import { useFormik } from 'formik';
+import {useField, Form, Formik } from 'formik';
 import * as Yup from 'yup';
-import { red } from "@material-ui/core/colors";
+
 
 export default function Contact(){
     const { language } = useLanguage();
@@ -19,56 +19,70 @@ export default function Contact(){
                             errors = [data.contacts_text.required_name.deutsch, data.contacts_text.required_email.deutsch, data.contacts_text.required_message.deutsch, data.contacts_text.invalid_email.deutsch];
                             break;
     }
-    const formik = useFormik({
-        initialValues: {
-            name: '', 
-            email: '',
-            message: ''
-        },
-        validationSchema: Yup.object({
-            name: Yup.string().required(errors[0]),
-            email: Yup.string().email(errors[3]).required(errors[1]),
-            message: Yup.string().required(errors[2])
-        }),
-        onSubmit: values => {},
-    });
 
+    const MyInput = ({ label, ...props }) => {
+        const [field, meta] = useField(props);
+        return (
+          <>
+            <label htmlFor={props.id || props.name}>{label}</label>
+            <input className="input" {...field} {...props} />
+            {meta.touched && meta.error ? (
+              <div className="error">{meta.error}</div>
+            ) : null}
+          </>
+        );
+    };
+    const MyTextArea = ({ label, ...props }) => {
+        const [field, meta] = useField(props);
+        return (
+          <>
+            <label htmlFor={props.id || props.name}>{label}</label>
+            <textarea className="input" {...field} {...props} />
+            {meta.touched && meta.error ? (
+              <div className="error">{meta.error}</div>
+            ) : null}
+          </>
+        );
+    };
+      
+    
     return(
         <div>
             <h1>{ text[0] }</h1>
-            <form onSubmit={formik.handleSubmit}>
-            <label htmlFor="name">{text[1]}</label>
-                <input
-                    id="name"
-                    name="name"
-                    type="text"
-                    {...formik.getFieldProps('name')}
-                /> 
-                {formik.touched.name && formik.errors.name ? (
-                    <div>{formik.errors.name}</div>
-                ) : null}
-                <label htmlFor="email">{text[2]}</label>
-                <input
-                    id="email"
-                    name="email"
-                    type="email"
-                    {...formik.getFieldProps('email')}
-                />
-                {formik.touched.email && formik.errors.email ? (
-                    <div>{formik.errors.email}</div>
-                ) : null} 
-                <label htmlFor="message">{text[3]}</label>
-                <textarea
-                    id="message"
-                    name="message"
-                    type="textarea"
-                    {...formik.getFieldProps('message')}
-                />
-                {formik.touched.message && formik.errors.message ? (
-                    <div>{formik.errors.message}</div>
-                ) : null} 
-                <button type="submit">Submit</button>
-             </form>
+            <Formik 
+                initialValues = {{
+                    name: '', 
+                    email: '',
+                    message: ''
+                }}
+                validationSchema = {
+                    Yup.object({
+                        name: Yup.string().required(errors[0]),
+                        email: Yup.string().email(errors[3]).required(errors[1]),
+                        message: Yup.string().required(errors[2])
+                    })
+                }
+                onSubmit = { values => {}}
+            >
+                <Form>
+                    <MyInput 
+                        label={ text[1] }
+                        name="name"
+                        type="text"
+                    />
+                    <MyInput 
+                        label={ text[2] }
+                        name="email"
+                        type="email"
+                    />
+                    <MyTextArea 
+                        label={ text[3] }
+                        name="message"
+                        type="textarea"
+                    />
+                    <button type="submit">Submit</button>
+                </Form>
+             </Formik>
         </div>
     );
 }
