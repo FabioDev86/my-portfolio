@@ -10,9 +10,9 @@ export default function Header(){
         case "deutsch" : text = [data.header_text.presentation.deutsch, data.header_text.motto.deutsch, data.header_text.profile_alt.deutsch]; break;
     }
     return(
-        <header>
+        <header id="header">
             <h1>{text[0]}</h1>
-            <img src="" alt={text[2]}/>
+            <img src="logo.png" alt={text[2]}/>
             <h2>{text[1]}</h2>
         </header>
     );

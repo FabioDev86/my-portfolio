@@ -10,7 +10,7 @@ export default function Tools(){
         case "deutsch" : header = text.tools_text.deutsch; break;
     }
     return(
-        <div className="tools">
+        <div id="tools">
             <h1>{ header }</h1>
             <img src="tools/visual-studio.svg" alt="Visual Studio Code icon" role="img" title="Visual Studio Code"/>
             <img src="tools/react.svg" alt="React icon" role="img" title="React"/>

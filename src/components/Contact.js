@@ -47,7 +47,7 @@ export default function Contact(){
       
     
     return(
-        <div>
+        <div id="contact">
             <h1>{ text[0] }</h1>
             <Formik 
                 initialValues = {{

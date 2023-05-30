@@ -12,13 +12,14 @@ export default function Nav(){
         case "deutsch" : links = text.nav_text.links.deutsch; break;
     }
     return(
-        <nav>
+        <nav id="navbar">
             <DropMenu />
             <div className="links">
-                <h3>{links[0]}</h3>
-                <h3>{links[1]}</h3>
-                <h3>{links[2]}</h3>
-                <h3>{links[3]}</h3>
+                <h3><a href="#header">{links[0]}</a></h3>
+                <h3><a href="#projects">{links[1]}</a></h3>
+                <h3><a href="#tools">{links[2]}</a></h3>
+                <h3><a href="#about">{links[3]}</a></h3>
+                <h3><a href="#contact">{links[4]}</a></h3>
             </div>
         </nav>
     );

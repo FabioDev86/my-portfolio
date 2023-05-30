@@ -10,7 +10,7 @@ export default function About(){
         case "deutsch" : text = data.about_text.header.deutsch; break;
     }
     return(
-        <div>
+        <div id="about">
             <h1>{ text }</h1>
             <p></p>
         </div>

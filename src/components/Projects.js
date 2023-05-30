@@ -11,7 +11,7 @@ export default function Projects(){
         case "deutsch" : text = [data.project_text.title.deutsch, data.project_text.sub_title.deutsch]; break;
     }
     return(
-        <div className="projects">
+        <div id="projects">
             <h1>{ text[0] }</h1>
             <h2>{ text[1] }</h2>
             <MyCarousel lang={ language }/>

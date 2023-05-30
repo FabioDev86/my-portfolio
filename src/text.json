@@ -6,9 +6,9 @@
             "deutsch" : "Wählen Sie eine Sprache"
         },
         "links" : {
-            "english" : ["Home","Projects","About","Contacts"],
-            "italiano" : ["Pagina Iniziale","Progetti","Chi sono","Contatti"],
-            "deutsch" : ["Startseite","Projekte","Wer bin Ich","Kontakte"]
+            "english" : ["Back to top","Projects","Tools","About","Contacts"],
+            "italiano" : ["Torna su","Progetti","Tools","Chi sono","Contatti"],
+            "deutsch" : ["Zurück nach oben","Projekte","Tools","Wer bin Ich","Kontakte"]
         }
     },
 

@@ -21,12 +21,16 @@ nav {
   gap: 3vw;
 }
 
+/*HEADER STYLING*/
+#header {
+  padding: 50px;
+}
+
 /*PROJECTS STYLING*/
-.projects {
+#projects {
+  padding: 50px;
   background-color: gray;
   text-align: left;
-  padding-left: 5vw;
-  padding-right: 5vw;
 }
 img {
   margin-left: auto;
@@ -34,12 +38,31 @@ img {
 }
 
 /*TOOLS STYLING*/
-.tools {
+#tools {
+  padding: 50px;
   text-align: left;
-  padding-left: 5vw;
-  padding-right: 5vw;
 }
-.tools img {
+#tools img {
   width: 50px;
+}
+
+/*ABOUT STYLING*/
+#about {
+  padding: 50px;
+  text-align: left;
+  background-color: gray;
+}
+
+/*CONTACT STYLING*/
+#contact {
+  padding: 50px;
+}
+#contact > h1 {
+  text-align: left;
+}
+
+/*FOOTER STYLING*/
+#footer {
+  background-color: gray;
 }
 
