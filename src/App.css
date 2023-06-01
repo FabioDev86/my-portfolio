@@ -21,6 +21,7 @@ nav {
   gap: 3vw;
 }
 
+
 /*HEADER STYLING*/
 #header {
   padding: 50px;
@@ -40,10 +41,18 @@ img {
 /*TOOLS STYLING*/
 #tools {
   padding: 50px;
-  text-align: left;
+  text-align: left;  
+  
+}
+#tools-icons {
+  display: flex;
+  justify-content: flex-start;
+  gap: 30px;
+    
 }
 #tools img {
   width: 50px;
+  margin: 0;
 }
 
 /*ABOUT STYLING*/
@@ -64,5 +73,11 @@ img {
 /*FOOTER STYLING*/
 #footer {
   background-color: gray;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 3vw;
+  padding-right: 50px;
+  padding-left: 50px;  
 }
 
