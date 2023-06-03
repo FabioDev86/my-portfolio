@@ -5,6 +5,7 @@
 /*NAVBAR STYLING*/
 nav {
   display: flex;
+  
   justify-content: space-between;
   background-color: gray;
   padding-left: 5vw;
@@ -46,6 +47,7 @@ img {
 }
 #tools-icons {
   display: flex;
+  flex-wrap: wrap;
   justify-content: flex-start;
   gap: 30px;
     
