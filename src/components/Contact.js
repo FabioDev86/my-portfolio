@@ -2,6 +2,7 @@ import { useLanguage } from "../contexts/LanguageProvider";
 import data from "../text.json";
 import {useField, Form, Formik } from 'formik';
 import * as Yup from 'yup';
+import emailjs from '@emailjs/browser';
 
 
 export default function Contact(){
@@ -44,6 +45,22 @@ export default function Contact(){
           </>
         );
     };
+    async function handleSubmit(values){
+        console.log(values);
+        let params = {
+            to_name : "Fabio",
+            from_name : values.name,
+            reply_to : values.email,
+            message : values.message
+        };
+        emailjs.send('service_wsxg3dy', 'template_59d3ypj', params, 'n629mPkgzuzLZfXwH')
+            .then((result) => {
+                console.log(result.text);
+            }, (error) => {
+                console.log(error.text);
+            }
+        );
+    }
       
     
     return(
@@ -62,7 +79,7 @@ export default function Contact(){
                         message: Yup.string().required(errors[2])
                     })
                 }
-                onSubmit = { values => {}}
+                onSubmit = { values => {handleSubmit(values)}}
             >
                 <Form>
                     <MyInput 

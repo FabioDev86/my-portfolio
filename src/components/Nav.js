@@ -4,7 +4,7 @@ import DropMenu from "./DropMenu";
 import text from "../text.json";
 
 const Desktop = ({ children }) => {
-    const isDesktop = useMediaQuery({ minWidth: 992 })
+    const isDesktop = useMediaQuery({ minWidth: 768 })
     return isDesktop ? children : null
 }
 const Mobile = ({ children }) => {
