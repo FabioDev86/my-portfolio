@@ -11,7 +11,7 @@ export default function Header(){
     }
     return(
         <header id="header">
-            <h1>{text[0]}</h1>
+            <h1>{text[0][0]}<span style={{color: "#3AA2C2", filter: "drop-shadow(3px 3px 3px gray)"}}>{text[0][1]}</span>{text[0][2]}</h1>
             <img src="logo.png" alt={text[2]}/>
             <h2>{text[1]}</h2>
         </header>

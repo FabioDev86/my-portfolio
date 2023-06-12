@@ -14,9 +14,9 @@
 
     "header_text" : {
         "presentation" : {
-            "english" : "Hi, I'm Fabio Bauleo, a front end developer specialized in React",
-            "italiano" : "Ciao, sono Fabio Bauleo, uno sviluppatore front end specializzato in React",
-            "deutsch" : "Hallo, ich bin Fabio Bauleo, ein Frontend-Entwickler mit Spezialisierung auf React"
+            "english" : ["Hi, I'm ", "Fabio Bauleo", " a front end developer specialized in React"],
+            "italiano" : ["Ciao, sono ", "Fabio Bauleo", " uno sviluppatore front end specializzato in React"],
+            "deutsch" : ["Hallo, ich bin ", "Fabio Bauleo", " ein Frontend-Entwickler mit Spezialisierung auf React"]
         },
         "motto" : {
             "english" : "\"Maybe I don't know how to do it yet, but I will figure it out\"",

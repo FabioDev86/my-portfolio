@@ -2,7 +2,6 @@
   text-align: center;
 }
 
-
 /*NAVBAR STYLING*/
 nav {
   display: flex;  
@@ -25,6 +24,9 @@ nav {
   text-decoration: none;
   color: white;
 }
+.links a:hover {
+  color: #3AA2C2;
+}
 #drop-menu {
   display: flex;
   align-items: center;
@@ -42,8 +44,16 @@ nav {
 
 /*HEADER STYLING*/
 #header {
-  padding: 50px;
+  padding:10vw;
+  color: #27282D;
+  
+
 }
+#header img {
+  padding: 5vw;
+  width: 40vw;
+}
+
 
 /*PROJECTS STYLING*/
 #projects {
