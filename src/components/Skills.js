@@ -10,9 +10,9 @@ export default function Skills(){
         case "deutsch" : header = text.tools_text.deutsch; break;
     }
     return(
-        <div id="tools">
-            <h1>{ header }</h1>
-            <div id="tools-icons">
+        <div id="skills">
+            <h1 style={{filter: "drop-shadow(3px 3px 3px gray)"}}>{ header[0] }<span style={{color: "#3AA2C2"}}>{ header[1] }</span></h1>
+            <div id="skills-icons">
                 <img src="tools/html.svg" alt="html 5 icon" role="img" title="HTML 5"/>
                 <img src="tools/css3.svg" alt="css 3 icon" role="img" title="CSS 3"/>
                 <img src="tools/javascript.svg" alt="javascript icon" role="img" title="Javascript"/>

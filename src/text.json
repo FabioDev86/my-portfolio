@@ -44,9 +44,9 @@
     },
 
     "tools_text" : {
-        "english" : "My skills",
-        "italiano" : "Le mie skills",
-        "deutsch" : "Meine skills"
+        "english" : ["My ", "skills"],
+        "italiano" : ["Le mie ", "skills"],
+        "deutsch" : ["Meine ", "skills"]
     },
 
     "about_text" : {

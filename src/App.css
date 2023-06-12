@@ -70,22 +70,27 @@ img {
   width: 50vw;
 }
 
-/*TOOLS STYLING*/
-#tools {
-  padding: 50px;
+/*SKILLS STYLING*/
+#skills {
+  padding: 10vw;
   text-align: left;  
-  
+  color: #27282D;  
 }
-#tools-icons {
+#skills h1 {
+  padding-bottom: 20px;
+}
+#skills-icons {
   display: flex;
   flex-wrap: wrap;
   justify-content: flex-start;
-  gap: 30px;
-    
+  gap: 30px;    
 }
-#tools img {
+#skills img {
   width: 50px;
   margin: 0;
+}
+#skills img:hover {
+  filter: drop-shadow(3px 3px 3px gray);
 }
 
 /*ABOUT STYLING*/

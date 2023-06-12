@@ -27,7 +27,7 @@ export default function Nav(){
                 <div className="links">
                     <a href="#header">{links[0]}</a>
                     <a href="#projects">{links[1]}</a>
-                    <a href="#tools">{links[2]}</a>
+                    <a href="#skills">{links[2]}</a>
                     <a href="#about">{links[3]}</a>
                     <a href="#contact">{links[4]}</a>
                 </div>
