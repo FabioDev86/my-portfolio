@@ -60,8 +60,7 @@ export default function Contact(){
                 console.log(error.text);
             }
         );
-    }
-      
+    }      
     
     return(
         <div id="contact">

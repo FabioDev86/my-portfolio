@@ -2,24 +2,41 @@
   text-align: center;
 }
 
+
 /*NAVBAR STYLING*/
 nav {
-  display: flex;
-  
+  display: flex;  
   justify-content: space-between;
-  background-color: gray;
-  padding-left: 5vw;
-  padding-right: 5vw;
+  background-color: #27282D;
+  padding: 2vw 5vw 2vw;
   align-items: center;
   position: sticky;
   top: 0;
-  border-bottom: solid black;
+  border-bottom: 0.75vw solid #3AA2C2;
   z-index: 1000;
 }
 .links {
   display: flex;
   justify-content: space-around;
   gap: 3vw;
+}
+.links a {
+  font-size: 1.5vw;
+  text-decoration: none;
+  color: white;
+}
+#drop-menu {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+#drop-menu img {
+  max-width: 50px;
+  padding-right: 1vw;
+}
+#drop-menu label {
+  color: white;
+  padding-right: 1vw;
 }
 
 

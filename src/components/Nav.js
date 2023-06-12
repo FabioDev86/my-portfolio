@@ -25,14 +25,16 @@ export default function Nav(){
             <Desktop>
                 <DropMenu />
                 <div className="links">
-                    <h3><a href="#header">{links[0]}</a></h3>
-                    <h3><a href="#projects">{links[1]}</a></h3>
-                    <h3><a href="#tools">{links[2]}</a></h3>
-                    <h3><a href="#about">{links[3]}</a></h3>
-                    <h3><a href="#contact">{links[4]}</a></h3>
+                    <a href="#header">{links[0]}</a>
+                    <a href="#projects">{links[1]}</a>
+                    <a href="#tools">{links[2]}</a>
+                    <a href="#about">{links[3]}</a>
+                    <a href="#contact">{links[4]}</a>
                 </div>
             </Desktop>
-            <Mobile>Mobile</Mobile>
+            <Mobile>
+                <DropMenu />
+            </Mobile>
         </nav>
     );
 }

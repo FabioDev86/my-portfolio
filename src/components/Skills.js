@@ -1,7 +1,7 @@
 import { useLanguage } from "../contexts/LanguageProvider";
 import text from "../text.json";
 
-export default function Tools(){
+export default function Skills(){
     const { language } = useLanguage();
     let header;
     switch(language){
@@ -13,6 +13,9 @@ export default function Tools(){
         <div id="tools">
             <h1>{ header }</h1>
             <div id="tools-icons">
+                <img src="tools/html.svg" alt="html 5 icon" role="img" title="HTML 5"/>
+                <img src="tools/css3.svg" alt="css 3 icon" role="img" title="CSS 3"/>
+                <img src="tools/javascript.svg" alt="javascript icon" role="img" title="Javascript"/>
                 <img src="tools/visual-studio.svg" alt="Visual Studio Code icon" role="img" title="Visual Studio Code"/>
                 <img src="tools/react.svg" alt="React icon" role="img" title="React"/>
                 <img src="tools/figma.svg" alt="Figma icon" role="img" title="Figma"/>

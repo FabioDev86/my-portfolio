@@ -10,7 +10,8 @@ export default function DropMenu(){
         case "deutsch" : label = text.nav_text.dropbox.deutsch; break;
     }
     return(
-        <div>
+        <div id="drop-menu">
+            <img src="language_icon.png" alt="language icon"/>
             <label for="language-menu">{label}</label>
             <select id="language-menu" 
                 value={language}

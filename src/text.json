@@ -6,9 +6,9 @@
             "deutsch" : "Wählen Sie eine Sprache"
         },
         "links" : {
-            "english" : ["Back to top","Projects","Tools","About","Contacts"],
-            "italiano" : ["Torna su","Progetti","Tools","Chi sono","Contatti"],
-            "deutsch" : ["Zurück nach oben","Projekte","Tools","Wer bin Ich","Kontakte"]
+            "english" : ["Back to top","Projects","Skills","About","Contacts"],
+            "italiano" : ["Torna su","Progetti","Skills","Chi sono","Contatti"],
+            "deutsch" : ["Zurück nach oben","Projekte","Skills","Wer bin Ich","Kontakte"]
         }
     },
 
@@ -44,9 +44,9 @@
     },
 
     "tools_text" : {
-        "english" : "My favourite tools",
-        "italiano" : "I miei tools preferiti",
-        "deutsch" : "Meine Lieblings Tools"
+        "english" : "My skills",
+        "italiano" : "Le mie skills",
+        "deutsch" : "Meine skills"
     },
 
     "about_text" : {

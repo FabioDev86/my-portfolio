@@ -2,7 +2,7 @@ import './App.css';
 import Nav from './components/Nav';
 import Header from './components/Header';
 import Projects from './components/Projects';
-import Tools from './components/Tools';
+import Skills from './components/Skills';
 import About from './components/About';
 import Contact from './components/Contact';
 import { LanguageProvider } from './contexts/LanguageProvider';
@@ -15,7 +15,7 @@ function App() {
       <Nav /> 
       <Header />
       <Projects /> 
-      <Tools />
+      <Skills />
       <About />
       <Contact /> 
       <Footer />   
