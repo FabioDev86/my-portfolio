@@ -12,7 +12,7 @@ export default function Projects(){
     }
     return(
         <div id="projects">
-            <h1>{ text[0] }</h1>
+            <h1 style={{filter: "drop-shadow(3px 3px 3px gray)"}}>{text[0][0]}<span style={{color: "#3AA2C2"}}>{text[0][1]}</span></h1>
             <h2>{ text[1] }</h2>
             <MyCarousel lang={ language }/>
         </div>

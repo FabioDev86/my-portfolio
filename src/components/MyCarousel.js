@@ -23,37 +23,32 @@ export default function MyCarousel(props) {
       <Carousel.Item>
         <img
           className="d-block w-30"
-          src="horseman.jpg"
+          src="coming_soon.png"
           alt="First slide"
         />
         <Carousel.Caption>
-          <h3>{ titles[0] }</h3>
-          <p>{ descriptions[0] }</p>
+          
         </Carousel.Caption>
       </Carousel.Item>
       <Carousel.Item>
         <img
           className="d-block w-30"
-          src="horseman.jpg"
+          src="coming_soon.png"
           alt="Second slide"
         />
 
         <Carousel.Caption>
-          <h3>Second slide label</h3>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+          
         </Carousel.Caption>
       </Carousel.Item>
       <Carousel.Item>
         <img
           className="d-block w-30"
-          src="horseman.jpg"
+          src="coming_soon.png"
           alt="Third slide"
         />
         <Carousel.Caption>
-          <h3>Third slide label</h3>
-          <p>
-            Praesent commodo cursus magna, vel scelerisque nisl consectetur.
-          </p>
+          
         </Carousel.Caption>
       </Carousel.Item>
     </Carousel>

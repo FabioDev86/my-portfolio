@@ -32,9 +32,9 @@
 
     "project_text" : {
         "title" : {
-            "english" : "My Projects",
-            "italiano" : "I miei progetti",
-            "deutsch" : "Meine Projekte"
+            "english" : ["My", " Projects"],
+            "italiano" : ["I miei ", "progetti"],
+            "deutsch" : ["Meine ", "Projekte"]
         },
         "sub_title" : {
             "english" : "Here are some examples of what I can do for you",

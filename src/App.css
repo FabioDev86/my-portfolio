@@ -1,5 +1,6 @@
 .App {
   text-align: center;
+  
 }
 
 /*NAVBAR STYLING*/
@@ -46,8 +47,6 @@ nav {
 #header {
   padding:10vw;
   color: #27282D;
-  
-
 }
 #header img {
   padding: 5vw;
@@ -57,13 +56,18 @@ nav {
 
 /*PROJECTS STYLING*/
 #projects {
-  padding: 50px;
-  background-color: gray;
+  padding:10vw;
+  background-color: #27282D;;
   text-align: left;
+  color: white;
+}
+#projects h2 {
+  padding-bottom: 10vw;
 }
 img {
   margin-left: auto;
   margin-right: auto;
+  width: 50vw;
 }
 
 /*TOOLS STYLING*/
