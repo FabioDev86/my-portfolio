@@ -11,7 +11,7 @@ export default function About(){
     }
     return(
         <div id="about">
-            <h1>{ text }</h1>
+            <h1>{ text[0] }<span style={{color: "#3AA2C2"}}>{ text [1] }</span></h1>
             <p></p>
         </div>
     );

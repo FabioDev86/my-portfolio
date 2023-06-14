@@ -95,9 +95,13 @@ img {
 
 /*ABOUT STYLING*/
 #about {
-  padding: 50px;
+  padding: 10vw;
   text-align: left;
-  background-color: gray;
+  background-color: #27282D;
+  color:white;
+}
+#about h1 {
+  filter: drop-shadow(3px 3px 3px gray);
 }
 
 /*CONTACT STYLING*/

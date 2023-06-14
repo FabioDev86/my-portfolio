@@ -51,9 +51,9 @@
 
     "about_text" : {
         "header" : {
-            "english" : "What about me?",
-            "italiano" : "A proposito di me!",
-            "deutsch" : "Und Ich?"
+            "english" : ["What about ", "me?"],
+            "italiano" : ["A proposito di ", "me!"],
+            "deutsch" : ["Und ", "Ich?"]
         }
     },
     

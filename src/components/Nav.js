@@ -21,7 +21,7 @@ export default function Nav(){
         case "deutsch" : links = text.nav_text.links.deutsch; break;
     }
     return(
-        <nav id="navbar">
+        <nav>
             <Desktop>
                 <DropMenu />
                 <div className="links">
