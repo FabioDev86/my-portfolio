@@ -24,28 +24,20 @@ export default function Contact(){
     const MyInput = ({ label, ...props }) => {
         const [field, meta] = useField(props);
         return (
-            <div>
-                <div className="input-box">
-                    <label htmlFor={props.id || props.name}>{label}</label>
-                    <input className="input" {...field} {...props} />
-                </div>
-                {meta.touched && meta.error ? (
-                <div className="error">{meta.error}</div>
-                ) : null}
+            <div className="input-box">                
+                <label htmlFor={props.id || props.name}>{label}</label>
+                <input className="input" {...field} {...props} />                  
+                <div className="error">{ meta.touched && meta.error ? meta.error : null }</div>
             </div>
         );
     };
     const MyTextArea = ({ label, ...props }) => {
         const [field, meta] = useField(props);
         return (
-          <div>
-          <div className="input-box">
+          <div className="input-box">          
             <label htmlFor={props.id || props.name}>{label}</label>
             <textarea className="input" {...field} {...props} />
-            </div>
-            {meta.touched && meta.error ? (
-              <div className="error">{meta.error}</div>
-            ) : null}
+            <div className="error">{ meta.touched && meta.error ? meta.error : null }</div>
           </div>
         );
     };
@@ -83,6 +75,7 @@ export default function Contact(){
                 }
                 onSubmit = { values => {handleSubmit(values)}}
             >
+                
                 <Form>
                     <MyInput 
                         label={ text[1] }
@@ -101,6 +94,7 @@ export default function Contact(){
                     />
                     <button type="submit" id="submit">Submit</button>
                 </Form>
+                
              </Formik>
         </div>
     );
