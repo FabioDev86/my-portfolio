@@ -59,9 +59,9 @@
     
     "contacts_text" : {
         "header" : {
-            "english" : "Contact me",
-            "italiano" : "Contattami",
-            "deutsch" : "Kontaktiere mich"
+            "english" : ["Contact ", "me"],
+            "italiano" : ["Contatta", "mi"],
+            "deutsch" : ["Kontaktiere ", "mich"]
         },
         "name_label" : {
             "english" : "Your name",

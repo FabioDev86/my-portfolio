@@ -27,6 +27,7 @@ nav {
 }
 .links a:hover {
   color: #3AA2C2;
+  transition: 0.7s;
 }
 #drop-menu {
   display: flex;
@@ -52,6 +53,9 @@ nav {
   padding: 5vw;
   width: 40vw;
 }
+#header h2 {
+  font-style: italic;
+}
 
 
 /*PROJECTS STYLING*/
@@ -64,7 +68,7 @@ nav {
 #projects h2 {
   padding-bottom: 10vw;
 }
-img {
+#projects img {
   margin-left: auto;
   margin-right: auto;
   width: 50vw;
@@ -106,20 +110,84 @@ img {
 
 /*CONTACT STYLING*/
 #contact {
-  padding: 50px;
+  padding: 10vw;
+  color: #27282D;
+  text-align: center;
 }
 #contact > h1 {
   text-align: left;
+  filter: drop-shadow(3px 3px 3px gray);
+}
+form {
+  text-align: center;
+  background-color: #27282D;
+  color: white;
+  padding-top: 5vw;
+  padding-bottom: 5vw;
+}
+.input-box {
+  display: block;  
+  text-align: center;
+}
+.error {
+  color: red;
+}
+label{
+  padding-right: 5vw;
+  width: 180px;
+}
+.input {
+  width: 30vw;
+  min-width: 200px;
+}
+textarea  {
+  height: 300px;
+}
+#submit {
+  background-color: #3AA2C2;
+  color: #27282D;
+  border-radius:10px;
+  border: none;
+  font-weight: bold;
+  font-size: large;
+  width: 200px;
+  height: 50px;
+  box-shadow: 0px 0px 2px 2px #3AA2C2;
+  margin-top: 4vw;
+}
+#submit:hover {
+  background-color:white;
+  transition: 0.7s;
+}
+#submit:active {
+  background-color: #27282D;
+  color: white;
+  transition: 0.7s;
 }
 
 /*FOOTER STYLING*/
-#footer {
-  background-color: gray;
+footer {
+  background-color: #27282D;
+  color: white;
   display: flex;
-  justify-content: flex-start;
-  align-items: center;
+  justify-content: flex-start;  
   gap: 3vw;
-  padding-right: 50px;
-  padding-left: 50px;  
+  padding: 2vw 10vw 2vw;
+  border-top: 0.75vw solid #3AA2C2;
+}
+footer a {
+  text-decoration: none;
+  color: white;
+  font-size: small;
+  padding-left: 3vw;
+}
+footer a:hover {
+  color: #3AA2C2;
+  transition: 0.7s;
+}
+footer img {
+  width: 5vw;  
+  min-width: 50px;
+  margin: -2vw;  
 }
 

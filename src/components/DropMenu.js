@@ -1,7 +1,10 @@
 import { useLanguage } from "../contexts/LanguageProvider";
 import text from "../text.json";
+import { useMediaQuery } from "react-responsive"
+
 
 export default function DropMenu(){
+    const isMobile = useMediaQuery({ maxWidth: 500 })
     const { language, changeLanguage } = useLanguage();
     let label;
     switch(language){
@@ -12,7 +15,7 @@ export default function DropMenu(){
     return(
         <div id="drop-menu">
             <img src="language_icon.png" alt="language icon"/>
-            <label for="language-menu">{label}</label>
+            {isMobile ? null : <label for="language-menu">{label}</label> }
             <select id="language-menu" 
                 value={language}
                 onChange={ e => {changeLanguage(e.target.value)}} >

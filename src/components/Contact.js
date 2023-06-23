@@ -24,29 +24,28 @@ export default function Contact(){
     const MyInput = ({ label, ...props }) => {
         const [field, meta] = useField(props);
         return (
-          <>
+          <div className="input-box">
             <label htmlFor={props.id || props.name}>{label}</label>
             <input className="input" {...field} {...props} />
             {meta.touched && meta.error ? (
               <div className="error">{meta.error}</div>
             ) : null}
-          </>
+          </div>
         );
     };
     const MyTextArea = ({ label, ...props }) => {
         const [field, meta] = useField(props);
         return (
-          <>
+          <div className="input-box">
             <label htmlFor={props.id || props.name}>{label}</label>
             <textarea className="input" {...field} {...props} />
             {meta.touched && meta.error ? (
               <div className="error">{meta.error}</div>
             ) : null}
-          </>
+          </div>
         );
     };
     async function handleSubmit(values){
-        console.log(values);
         let params = {
             to_name : "Fabio",
             from_name : values.name,
@@ -64,7 +63,7 @@ export default function Contact(){
     
     return(
         <div id="contact">
-            <h1>{ text[0] }</h1>
+            <h1>{ text[0][0] } <span style={{color: "#3AA2C2"}}>{ text[0][1]}</span> </h1>
             <Formik 
                 initialValues = {{
                     name: '', 
@@ -96,7 +95,7 @@ export default function Contact(){
                         name="message"
                         type="textarea"
                     />
-                    <button type="submit">Submit</button>
+                    <button type="submit" id="submit">Submit</button>
                 </Form>
              </Formik>
         </div>
