@@ -24,21 +24,25 @@ export default function Contact(){
     const MyInput = ({ label, ...props }) => {
         const [field, meta] = useField(props);
         return (
-          <div className="input-box">
-            <label htmlFor={props.id || props.name}>{label}</label>
-            <input className="input" {...field} {...props} />
-            {meta.touched && meta.error ? (
-              <div className="error">{meta.error}</div>
-            ) : null}
-          </div>
+            <div>
+                <div className="input-box">
+                    <label htmlFor={props.id || props.name}>{label}</label>
+                    <input className="input" {...field} {...props} />
+                </div>
+                {meta.touched && meta.error ? (
+                <div className="error">{meta.error}</div>
+                ) : null}
+            </div>
         );
     };
     const MyTextArea = ({ label, ...props }) => {
         const [field, meta] = useField(props);
         return (
+          <div>
           <div className="input-box">
             <label htmlFor={props.id || props.name}>{label}</label>
             <textarea className="input" {...field} {...props} />
+            </div>
             {meta.touched && meta.error ? (
               <div className="error">{meta.error}</div>
             ) : null}

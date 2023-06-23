@@ -126,18 +126,24 @@ form {
   padding-bottom: 5vw;
 }
 .input-box {
-  display: block;  
-  text-align: center;
+  display: flex;  
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+
+  margin-left: 10vw;
+  margin-right: 10vw;
+
+  
 }
 .error {
   color: red;
 }
 label{
-  padding-right: 5vw;
+  
   width: 180px;
 }
 .input {
-  width: 30vw;
+  width: 40vw;
   min-width: 200px;
 }
 textarea  {
