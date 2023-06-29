@@ -102,6 +102,11 @@
             "english" : "It seems your email address is invalid",
             "italiano" : "Sembra che il tuo indirizzo email non sia corretto",
             "deutsch" : "Offenbar ist Ihre E-Mail-Adresse ungültig"
+        },
+        "alert_msg" : {
+            "english" : "Your message has been successfully sent",
+            "italiano" : "Il tuo messaggio è stato inviato correttamente",
+            "deutch" : "Ihre Nachricht wurde erfolgreich gesendet"
         }
     }
 
