@@ -66,6 +66,7 @@ export default function Contact(){
         <div id="contact">
             <h1>{ text[0][0] } <span style={{color: "#3AA2C2"}}>{ text[0][1]}</span> </h1>
             <Formik 
+                key={language} 
                 initialValues = {{
                     name: '', 
                     email: '',
