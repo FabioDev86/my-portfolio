@@ -107,6 +107,11 @@
             "english" : "Your message has been successfully sent",
             "italiano" : "Il tuo messaggio è stato inviato correttamente",
             "deutch" : "Ihre Nachricht wurde erfolgreich gesendet"
+        },
+        "button" : {
+            "english" : "Submit",
+            "italiano" : "Invia",
+            "deutch" : "Einsenden"
         }
     }
 
