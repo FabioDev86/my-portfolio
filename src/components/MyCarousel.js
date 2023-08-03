@@ -2,41 +2,29 @@ import Carousel from 'react-bootstrap/Carousel';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 export default function MyCarousel(props) {
-  let titles = [];
-  let descriptions = [];
-    switch(props.lang){
-        case "english" : 
-          titles = ["Project 1", "Project 2", "Project 3"]; 
-          descriptions = ["This is my first project", "This is my second project", "This is my third project"]
-          break;
-        case "italiano" : 
-          titles = ["Progetto 1", "Project 2", "Project 3"]; 
-          descriptions = ["Questo è il mio primo progetto", "This is my second project", "This is my third project"]
-          break;
-        case "deutsch" :  
-          titles = ["Project 1", "Project 2", "Project 3"]; 
-          descriptions = ["This is my first project", "This is my second project", "This is my third project"]
-          break;
-    }
+  
   return (
     <Carousel>
       <Carousel.Item>
+        <a href='https://github.com/FabioDev86/front-end-mentor/tree/master/body-fat-calculator'>
         <img
           className="d-block w-30"
-          src="coming_soon.png"
-          alt="First slide"
+          src="/projects/body-fat-calculator.png"
+          alt="Body Fat Calculator"
         />
+        </a>
         <Carousel.Caption>
-          
+         
         </Carousel.Caption>
       </Carousel.Item>
       <Carousel.Item>
+        <a href='https://github.com/FabioDev86/front-end-mentor/tree/master/result-summary-component'>
         <img
           className="d-block w-30"
-          src="coming_soon.png"
-          alt="Second slide"
+          src="/projects/result-summary-component.png"
+          alt="Result Summary Component"
         />
-
+        </a>
         <Carousel.Caption>
           
         </Carousel.Caption>
